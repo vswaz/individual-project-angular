@@ -1,1 +1,20 @@
 <p>create works!</p>
+<form (ngSubmit)="createNewBook(newBook)">
+    <label for="title" >Title</label>
+    <input [(ngModel)]="newBook.title" id="title" name="title" required="required">
+    
+    <label for="author"> Author</label>
+    <input [(ngModel)]="newBook.author" id="author" name="author" required="required">
+    
+    <label for="price"> Price</label>
+    <input [(ngModel)]="newBook.price" id="price" name="price" required="required">
+    
+    <label for="publisher"> Publisher</label>
+    <input [(ngModel)]="newBook.publisher" id="publisher" name="publisher" required="required">
+    
+    <label for="language"> Language</label>
+    <input [(ngModel)]="newBook.language" id="language" name="language" required="required">
+
+
+    <button type="submit">Create</button>
+</form>

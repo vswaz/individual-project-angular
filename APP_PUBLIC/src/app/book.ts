@@ -14,5 +14,5 @@ export class Book {
     price: string;
     publisher: string;
     language: string;
-    review:  Review[];
+   
 }

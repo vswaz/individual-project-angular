@@ -30,6 +30,10 @@ import { AboutComponent } from './about/about.component';
         component: HomepageComponent
       },
       {
+        path: 'list',
+        component: HomeListComponent
+      },
+      {
         path: 'about',
         component: AboutComponent
       },
@@ -40,7 +44,7 @@ import { AboutComponent } from './about/about.component';
       
     ])
   ],
-  providers: [],
-  bootstrap: [HomeListComponent]
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
+  bootstrap: [FrameworkComponent]
 })
 export class AppModule { }

@@ -17,7 +17,7 @@ export class HomeListComponent implements OnInit {
 
   ngOnInit(): void {
     this.bookService
-      .getFoods()
+      .getBooks()
       .then((books: Book[]) => {
         this.books = books.map(book => {
           return book;
