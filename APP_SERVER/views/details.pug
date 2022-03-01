@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1= title
+  .row
+    .col-12.col-md-8
+      h1 #{currentBook.title} 
+      p Author: #{currentBook.author}
+      p Price: #{currentBook.price}
+      p Publishers: #{currentBook.publisher}
+      p Language: #{currentBook.language}
+      p Review: 
+        p 
+          ul 
+            each review in currentBook.review
+              li #{review.author}
+              li #{review.rating}
+              li #{review.date}
+              li #{review.feedback}
+              
+
+
+    

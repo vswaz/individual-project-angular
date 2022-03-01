@@ -1,0 +1,55 @@
+extends layout
+
+block content
+   .row.banner
+    .col-12
+      h1= title
+      form(action='' method='POST')
+        .row
+            .col-md-5 
+                .col-md-5.col-md-offset-2
+                    label(for="title") Title: 
+                    input#btitle(type='text' name='title')
+                    br
+                    br
+                    label(for="author") Author:
+                    input#bauthor(type='text' name='author')
+                    br
+                    br
+                    label(for="price") Price:
+                    input#bprice(type='text' name='price')
+                    br
+                    br
+                    label(for="publisher") Publishers:
+                    input#bpublisher(type='text' name='publisher')
+                    br
+                    br
+                    label(for="language") Language:
+                    input#blanguage(type='text' name='language')
+                    br
+                    br
+                    br
+        .row
+            .col-md-5 
+                .col-md-5.col-md-offset-2
+                    h4 Review
+                    
+                    label(for="rauthor") Author: 
+                    input#brauthor(type='text' name='rauthor')
+                    br
+                    br
+                    label(for="rating") Rating: 
+                    input#brrating(type='text' name='rating')
+                    br
+                    br
+                    label(for="date") Date: 
+                    input#brdate(type='text' name='date')
+                    br
+                    br
+                    label(for="feedback") Feedback: 
+                    input#brfeedback(type='text' name='feedback')
+                    br
+                    br
+
+        
+        input(type='submit' value='Submit') 
