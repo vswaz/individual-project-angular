@@ -1,5 +1,5 @@
 <p>create works!</p>
-<form (ngSubmit)="createNewBook(newBook)">
+<form (ngSubmit)="createNewBook(newBook)" id="form">
     <label for="title" >Title</label>
     <input [(ngModel)]="newBook.title" id="title" name="title" required="required">
     
@@ -14,7 +14,5 @@
     
     <label for="language"> Language</label>
     <input [(ngModel)]="newBook.language" id="language" name="language" required="required">
-
-
     <button type="submit">Create</button>
 </form>
