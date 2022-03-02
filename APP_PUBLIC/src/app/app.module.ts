@@ -11,6 +11,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { CreateComponent } from './create/create.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutComponent } from './about/about.component';
     HomeListComponent,
     FrameworkComponent,
     HomepageComponent,
-    CreateComponent
+    CreateComponent,
+    DetailsPageComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,10 @@ import { AboutComponent } from './about/about.component';
       {
         path: 'create',
         component: CreateComponent
+      },
+      {
+        path: 'books/:bookid',
+        component: DetailsPageComponent
       }
       
     ])
